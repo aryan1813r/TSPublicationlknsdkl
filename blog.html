@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | TS Publication</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .inner-page-header {
+            padding: 160px 0 80px;
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .blog-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-box">
+                    <span class="logo-t">T</span><span class="logo-s">S</span>
+                </div>
+                <span class="logo-text-main">Publication</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" style="color: var(--white);">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" style="color: var(--white); cursor: pointer;">Services ▼</a>
+                    <div class="nav-dropdown-content">
+                        <a href="book-writing.html" class="dropdown-item">
+                            <div class="dropdown-icon">📖</div>
+                            <div class="dropdown-text">
+                                <h4 style="color: var(--dark);">Book Writing</h4>
+                                <p style="color: var(--gray);">Turn your ideas into a book</p>
+                            </div>
+                        </a>
+                        <a href="book-publishing.html" class="dropdown-item">
+                            <div class="dropdown-icon">📚</div>
+                            <div class="dropdown-text">
+                                <h4 style="color: var(--dark);">Book Publishing</h4>
+                                <p style="color: var(--gray);">Complete publishing solutions</p>
+                            </div>
+                        </a>
+                        <a href="book-marketing.html" class="dropdown-item">
+                            <div class="dropdown-icon">🚀</div>
+                            <div class="dropdown-text">
+                                <h4 style="color: var(--dark);">Book Marketing</h4>
+                                <p style="color: var(--gray);">Promote your book globally</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="authors.html" style="color: var(--white);">Authors</a>
+                <a href="books.html" style="color: var(--white);">Our Books</a>
+                <a href="about.html" style="color: var(--white);">About Us</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary bg-white text-dark">Let's Talk</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" style="color: var(--white);">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-close">
+                <button id="close-menu-btn"><i class="ri-close-line"></i></button>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="book-writing.html">Book Writing</a>
+            <a href="book-publishing.html">Book Publishing</a>
+            <a href="book-marketing.html">Book Marketing</a>
+            <a href="authors.html">Authors</a>
+            <a href="books.html">Our Books</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="btn btn-primary mt-4">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <section class="inner-page-header">
+        <div class="container relative z-10">
+            <h1 class="hero-title" data-aos="fade-up">Publishing <span class="text-gradient">Insights</span></h1>
+            <p class="section-desc mx-auto text-white opacity-80" data-aos="fade-up" data-aos-delay="100">
+                Actionable advice, industry news, and marketing strategies for modern authors.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="blog-list">
+
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop"
+                            alt="Blog Post">
+                        <div class="blog-category">Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Effective Marketing Strategies for Books in 2024</a></h3>
+                        <p>Learn how to cut through the noise and dominate the Amazon algorithm using modern social
+                            media funnels.</p>
+                        <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=600&auto=format&fit=crop"
+                            alt="Blog Post">
+                        <div class="blog-category">Writing</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">How to Publish Your First Book in 30 Days</a></h3>
+                        <p>A comprehensive step-by-step guide to writing your manuscript rapidly without sacrificing
+                            quality.</p>
+                        <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?q=80&w=600&auto=format&fit=crop"
+                            alt="Blog Post">
+                        <div class="blog-category">Publishing</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Self-Publishing vs Traditional: What's Right For You?</a></h3>
+                        <p>Weighing the pros and cons of modern publishing routes for first-time non-fiction authors.
+                        </p>
+                        <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=600&auto=format&fit=crop"
+                            alt="Blog Post">
+                        <div class="blog-category">Editing</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">The 5 Most Common Mistakes in First Drafts</a></h3>
+                        <p>Our senior developmental editors break down the easiest ways to fix structural issues in your
+                            manuscript.</p>
+                        <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop"
+                            alt="Blog Post">
+                        <div class="blog-category">Business</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Using Your Book as a Premium Lead Magnet</a></h3>
+                        <p>How to transition casual readers into high-ticket consulting clients using strategic funnels.
+                        </p>
+                        <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&w=600&auto=format&fit=crop"
+                            alt="Blog Post">
+                        <div class="blog-category">Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">How to Secure 50 Reviews in Launch Week</a></h3>
+                        <p>The exact email sequences and outreach templates we use to drive massive social proof on
+                            launch day.</p>
+                        <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="btn btn-outline btn-lg">Load More Articles</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-12">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none;">
+                <p>&copy; 2024 TS Publication. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Custom override for sticky navbar since hero is dark
+        const innerNavbar = document.getElementById('navbar');
+        const logoText = innerNavbar.querySelector('.logo-text');
+        const links = innerNavbar.querySelectorAll('.nav-links a:not(.active)');
+        const mobileBtn = innerNavbar.querySelector('#mobile-menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Scrolled down - white bg, black text
+                logoText.style.color = 'var(--dark)';
+                mobileBtn.style.color = 'var(--dark)';
+                links.forEach(l => l.style.color = 'var(--gray)');
+            } else {
+                // Top - transparent bg, white text
+                logoText.style.color = 'var(--white)';
+                mobileBtn.style.color = 'var(--white)';
+                links.forEach(l => l.style.color = 'var(--white)');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | TS Publication</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .inner-hero {
+            padding: 160px 0 80px;
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inner-hero-shape {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 79, 111, 0.2) 0%, rgba(17, 17, 17, 0) 70%);
+            z-index: 1;
+        }
+
+        .service-detail-section {
+            padding: 100px 0;
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .service-detail-section:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .service-detail-section.reverse .service-content {
+            order: 2;
+        }
+
+        .service-detail-section.reverse .service-image {
+            order: 1;
+        }
+
+        .service-image img {
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-list {
+            margin-top: 30px;
+        }
+
+        .service-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .service-list li i {
+            color: var(--primary);
+            font-size: 1.5rem;
+            background: var(--secondary);
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .service-list h4 {
+            font-size: 1.125rem;
+            margin-bottom: 4px;
+        }
+
+        .service-list p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-detail-section.reverse .service-content,
+            .service-detail-section.reverse .service-image {
+                order: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-box">
+                <div class="logo-box">
+                    <span class="logo-t">T</span><span class="logo-s">S</span>
+                </div>
+                <span class="logo-text-main">Publication</span>
+            </a>
+                    <p class="text-gray mt-4">We are a premier book publishing agency dedicated to helping
+                        entrepreneurs, coaches, and experts turn their knowledge into reality.</p>
+                </div>
+
+                <!-- Services Links -->
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Book Writing</a></li>
+                        <li><a href="services.html">Book Publishing</a></li>
+                        <li><a href="services.html">Book Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="books.html">Published Books</a></li>
+                        <li><a href="blog.html">Blog & Insights</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-list">
+                        <li><i class="ri-mail-line"></i><span>hello@tspublication.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TS Publication. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
